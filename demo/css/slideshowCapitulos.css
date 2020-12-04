@@ -1,0 +1,126 @@
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: static;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.arriba1, .arriba2, .arriba3, .arriba4 {
+  cursor: pointer;
+  top: 0%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  background-color: black;
+  font-family: 'Lucida Console', monospace;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.arriba2 {
+  left: 35%;
+  border-radius: 3px 0 0 3px;
+}
+
+.arriba3 {
+  left: 60%;
+  border-radius: 3px 0 0 3px;
+}
+
+.arriba4 {
+  left: 85%;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* Split the screen in half */
+.split {
+  height: 100%;
+  width: 50%;
+  float:left;
+  position: fixed;
+  z-index: 1;
+  top: 10;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+/* Control the left side */
+.left {
+  position: relative;	
+  left: 0;
+  background-color: #111;
+}
+
+/* Control the right side */
+.right {
+  position: relative;
+  right: 0;
+  background-color: gray;
+}
+
+.centered {
+  position: absolute;
+  top: 30%;
+  left: 40%;
+  transform: translate(-30%, -40%);
+ 
+}
+
+
+
+
